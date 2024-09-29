@@ -1,0 +1,392 @@
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Corrigido: 'poppins,' para 'Poppins' */
+}
+
+body {
+    background-color: rgba(137, 43, 226, 0.107);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.flex img {
+    max-width: 20%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    justify-content: flex-end;
+    float: right;
+    display: inline-block;
+    transition: 2s;
+
+}
+
+header a:hover{
+    color: rgba(255, 255, 255, 0.856);
+    transform: scale(1.9);
+
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 60px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgba(255, 255, 255, 0.556);
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+
+}
+
+header a:hover{
+    color: rgba(255, 255, 255, 0.856);
+    transform: scale(1.5);
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*efeitos botao HIRE-ME*/
+header .btn-HIRE-ME button {
+    border: 2px solid black;
+    margin: 20px 40px;
+
+    border-radius: 500px;
+
+    background-color: wheat;
+    color: blueviolet;
+    font-weight: 700;
+    
+}
+.round-button{
+    padding: 15px; /* Ajuste o tamanho conforme necessário */
+    font-size: 12px;
+    font-weight: 300px;
+    background-color: rgb(122, 43, 226);
+    color: white;
+    border: none solid black;
+    border-radius: 65px; /* Faz o botão ficar redondo */
+    cursor: pointer; /* Indica que o botão é clicável */
+    width: 120px; /* Ajuste para definir o tamanho */
+    height: 50px; /* Deve ser igual à largura para ser um círculo */
+}
+
+
+header .btn-HIRE-ME button:hover{
+    box-shadow: 0px 0px 8px blueviolet
+}
+
+
+.header.round-button{
+    padding: 50px  30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(137, 43, 226, 0.219);
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+/*ESTILO DO TOPO DO SITE*/
+
+section.topo-do-site {
+    padding: 50px 5%;
+    display: flex; /* Adicionado para ativar flexbox */
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.topo-do-site h1 {
+    color: rgba(255, 255, 255, 0.297); /* Cor invisível */
+    font-size: 80px;
+    line-height: 40px;
+}
+
+.topo-do-site.txt-topo-site p{
+    color: blueviolet;
+    margin: 40px o;
+
+}
+
+.topo-do-site.img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0%;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.topo-img-foto.img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 30%;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/*configuraçoes dos titulos*/
+.titulos-container {
+    display: flex; /* Ativa o flexbox */
+    gap: 20px; /* Espaçamento entre os títulos */
+    float: right;
+    
+}
+
+.titulo {
+    font-size: 29px; /* Ajuste o tamanho conforme necessário */
+    
+    justify-content: space-between 4%;
+}
+
+
+
+    
+.serviços{
+    font-size: 50px;
+    color: white;
+}
+
+.subtitulo1{
+    font-size: 20px;
+    color: blueviolet;
+    
+
+}
+
+h3 {
+    margin-center: 40px; /* Ajuste o valor para mover o título mais para baixo */
+}
+
+
+.serviços{
+    font-size: 30px;
+}
+
+.h1{
+    font-size: 70px;
+}
+
+.titulos-container {
+    display: flex;
+    justify-content: center;
+    justify-items: normal;
+    
+    
+}
+
+.titulo {
+    text-align: center;
+}
+/*efeito do botao DOWLOAND CV!*/
+.round-button{
+    padding: 10px; /* Ajuste o tamanho conforme necessário */
+    font-size: 12px;
+    font-weight: 300px;
+    background-color: rgba(103, 56, 164, 0.83);
+    color: white;
+    border: none solid black;
+    border-radius: 65px; /* Faz o botão ficar redondo */
+    cursor: pointer; /* Indica que o botão é clicável */
+    width: 120px; /* Ajuste para definir o tamanho */
+    height: 50px; /* Deve ser igual à largura para ser um círculo */
+    justify-content: space-between;
+}
+.round-button{
+    padding: 15px; /* Ajuste o tamanho conforme necessário */
+    font-size: 12px;
+    font-weight: 300px;
+    background-color: rgb(122, 43, 226);
+    color: white;
+    border: none solid black;
+    border-radius: 65px; /* Faz o botão ficar redondo */
+    cursor: pointer; /* Indica que o botão é clicável */
+    width: 120px; /* Ajuste para definir o tamanho */
+    height: 50px; /* Deve ser igual à largura para ser um círculo */
+}
+
+header .produtos button:hover{
+    box-shadow: 0px 0px 8px blueviolet;
+    float: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 2s;
+
+}
+header a:hover{
+    color: rgba(255, 255, 255, 0.856);
+    transform: scale(1.5);
+
+}
+/*IMAGENS DESIGNE*/
+
+.img-container {
+    display: flex;
+    gap: 50px; /* Espaçamento entre as imagens */
+    float: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.img-flex {
+    max-width: 60px; /* Define um tamanho para as imagens */
+    float: left;
+}
+/*FORMULARIO DESIGNE*/
+form {
+    width: 300px;
+    margin-left: 0 auto;
+    border-radius: 50px;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    
+
+  }
+  
+  input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .titulos-container{
+    float: center;
+    
+    
+
+  }
+
+  
+.image-container{
+    display: flex;
+    gap: 70px; /* Espaço entre as imagens */
+    float: center;
+    margin-bottom: 80px;
+    justify-content: center;
+    display: flexbox;
+    
+    
+}
+
+
+.info-container {
+    text-align: right; /* Alinha o conteúdo à direita */
+    margin-right: 10px; /* Adiciona um pequeno espaçamento da borda direita */
+    justify-content: right;
+    display: flexbox;
+}
+h3 {
+    margin: 0;
+    font-weight: bold; /* Deixa os títulos em negrito */
+    
+}
+p {
+    margin: 5px 0 15px 0; /* Margem entre os parágrafos */
+}
+.imagem-container{
+    display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;     /* Centraliza verticalmente */
+            height: 1vh;           /* Define a altura da tela toda */
+            margin: 0;
+}
+
+header{
+    padding: 40px auto;
+}
+/**/
+header > .menu-desktop{
+    display: grid;
+    place-items: center;
+    justify-content: space-between;
+    display: flex;
+    
+
+    
+
+
+}
+header a{
+    color: white;
+    
+    
+    
+
+}
+    
+    
+header nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+
+}
+.titulo .final{
+    font-size: 10px;
+    
+}
